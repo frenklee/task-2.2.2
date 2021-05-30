@@ -11,14 +11,15 @@ import java.util.List;
 public class CarServiceImp implements CarService{
 
     @Override
-    public List<Car> listCars(Integer count){
+    public List<Car> listCars(int count){
+        List<Car> list = new ArrayList<>();
         List<Car> finalList = new ArrayList<>();
-        finalList.add(new Car(1,"Camry",1200));
-        finalList.add(new Car(2,"Landcruiser",2500));
-        finalList.add(new Car(3,"Camaro",1400));
-        finalList.add(new Car(4,"Juke",1000));
-        finalList.add(new Car(5,"Rav4",1100));
-        Iterator<Car> iter = finalList.iterator();
+        list.add(new Car(1,"Camry",1200));
+        list.add(new Car(2,"Landcruiser",2500));
+        list.add(new Car(3,"Camaro",1400));
+        list.add(new Car(4,"Juke",1000));
+        list.add(new Car(5,"Rav4",1100));
+        Iterator<Car> iter = list.iterator();
         while(iter.hasNext()){
             if(count==0){
                 break;

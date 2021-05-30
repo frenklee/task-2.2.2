@@ -14,8 +14,6 @@
           <element id="module-output" name="spring-mvc" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-simple:1.7.30" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.2.0.RELEASE" />
@@ -28,6 +26,7 @@
           <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.0.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.4.RELEASE" />
           <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
         </element>
       </element>
       <element id="directory" name="META-INF">

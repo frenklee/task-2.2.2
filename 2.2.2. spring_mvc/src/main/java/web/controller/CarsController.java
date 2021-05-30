@@ -14,21 +14,20 @@ import web.service.CarServiceImp;
 import java.util.List;
 
 @Controller
-@RequestMapping("/cars")
+@RequestMapping(value="/cars")
 public class CarsController {
 
     @Autowired
     private CarServiceImp carService;
 
-    @GetMapping(value = "/")
-    public String Cars(@RequestParam(value = "count",required = false) Integer count, ModelMap model){
+    @GetMapping()
+    public String Cars(@RequestParam(value = "count",required = false) Integer count, Model model){
         List<Car> finalList;
-        if (count == 0) {
+        if(count<=0 || count>=5){
             finalList = carService.listCars(5);
-        } else if(count < 5){
+        }
+        else {
             finalList = carService.listCars(count);
-        } else {
-            finalList = carService.listCars(5);
         }
         model.addAttribute("list",finalList);
         return "cars";

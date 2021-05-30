@@ -7,10 +7,10 @@
 </head>
 <body>
 <div>
-    <th:block th:each="car : ${list}">
-        <td th:text="${car.getModel()}">model</td>
-        <td th:text="${car.getSeries()}">series</td>
-        <td th:text="${car.getWeight()}">weight</td>
+    <th:block th:each="msg : ${list}">
+        <h1 th:text="${msg.getSeries()}"></h1>
+        <h1 th:text="${msg.getModel()}"></h1>
+        <h1 th:text="${msg.getWeight()}"></h1>
     </th:block>
 </div>
 </body>

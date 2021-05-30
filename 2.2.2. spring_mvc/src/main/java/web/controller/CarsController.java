@@ -23,6 +23,9 @@ public class CarsController {
     @GetMapping()
     public String Cars(@RequestParam(value = "count",required = false) Integer count, Model model){
         List<Car> finalList;
+        if (count == null){
+            count = 5;
+        }
         if(count<=0 || count>=5){
             finalList = carService.listCars(5);
         }

@@ -8,7 +8,7 @@
 <body>
 <div>
     <th:block th:each="car : ${list}">
-        <td th:text="${car.getModel}">model</td>
+        <td th:text="${car.getModel()}">model</td>
         <td th:text="${car.getSeries()}">series</td>
         <td th:text="${car.getWeight()}">weight</td>
     </th:block>

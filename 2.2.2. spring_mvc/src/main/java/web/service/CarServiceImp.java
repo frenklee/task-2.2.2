@@ -11,7 +11,7 @@ import java.util.List;
 public class CarServiceImp implements CarService{
 
     @Override
-    public List<Car> listCars(int count){
+    public List<Car> listCars(Integer count){
         List<Car> finalList = new ArrayList<>();
         finalList.add(new Car(1,"Camry",1200));
         finalList.add(new Car(2,"Landcruiser",2500));
